@@ -37,7 +37,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 .grid-lugarFecha{
     grid-area: grid-lugarFecha;
@@ -208,13 +208,13 @@ html{
 .lugar-img{
     background: #000000 url(../imgs/honolulu.jpg) center/cover;
     height: 40rem;
-    width: 49.5vw;
+    width: 50%;
 }
 .fecha-description{
     background-color: #1F222E;
     color: #FFFFFF;
     padding: 1rem;
-    width: 49.4vw;
+    width: 50%;
 }
 .fecha-description h3{
     font-size: 2rem;
