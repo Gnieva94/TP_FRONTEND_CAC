@@ -30,9 +30,14 @@ html{
     grid-area: grid-conf;
     display: flex;
     justify-content: flex-end;
+    
 }
 .grid-oradores{
     grid-area: grid-oradores;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
 }
 .grid-lugarFecha{
     grid-area: grid-lugarFecha;
@@ -71,10 +76,13 @@ html{
 }
 
 /* section 1 conf*/
-#conf{
-    width: 100vw;
-    height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../imgs/ba1.jpg) center/cover;
+.grid-conf{
+    padding: 20rem 0 15rem 0;
+    background-color: #000000;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../imgs/ba1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 75%;
 }
 .grid-conf > div{
     display: flex;
@@ -106,4 +114,82 @@ html{
     background-color: #4D9C23;
     border: #4D9C23 solid 1px;
     margin-left: 1rem;
+}
+
+/* section 2 oradores */
+.grid-oradores > p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.grid-oradores h3{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.card-container{
+    display: flex;
+    /* width: 100%; */
+    padding: 0 5rem;
+    background-color: #47515A;
+}
+.card{
+    /* height: 285px; */
+    /* width: 25rem; */
+    border: #e2dede solid 1px;
+    border-radius: 0.5rem;
+}
+.card-img{
+    /* height: 100%;
+    width: 100%; */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+/* card img */
+.steve{
+    background: #000000 url(../imgs/steve.jpg) center/cover;
+}
+.bill{
+    background: #000000 url(../imgs/bill.jpg) center/cover;
+}
+.ada{
+    background: #000000 url(../imgs/ada.jpeg) center/cover;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    /* height: 20rem; */
+}
+.card-description h3{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+.card-description p{
+    /* line-height: 2rem; */
+    font-size: 1rem;
+}
+/* description tags */
+.tags{
+    display: flex;
+    align-items: center;
+}
+.tags p{
+    border-radius: 0.3rem;
+    margin: 0 1rem 0 0;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+.javascript{
+    background-color: #F3B11A;
+    color: #000000;
+}
+.react{
+    background-color: #0FA2B3;
+    color: #FFFFFF;
+}
+.negocios{
+    background-color: #585152;
+    color: #FFFFFF;
+}
+.startups{
+    background-color: #FF071A;
+    color: #FFFFFF;
 }
