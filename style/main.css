@@ -4,6 +4,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    font-size: 62.5%;
+}
 /* Grid Templates */
 .grid-container{
     display: grid;
@@ -23,11 +26,10 @@
     align-items: center;
     background-color: #47515A;
 }
-.grid-nav{
-    grid-area: grid-nav;
-}
 .grid-conf{
     grid-area: grid-conf;
+    display: flex;
+    justify-content: flex-end;
 }
 .grid-oradores{
     grid-area: grid-oradores;
@@ -44,10 +46,10 @@
 
 /* Header */
 .grid-header img{
-    height: 50px;
+    height: 5rem;
 }
 .grid-header p{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #FFFFFF;
 }
 .grid-header div{
@@ -57,8 +59,8 @@
 .grid-header nav a{
     text-decoration: none;
     color: #B5B5B6;
-    font-size: 1.025rem;
-    margin: 0 0.7rem;
+    font-size: 1.5rem;
+    margin: 0 1rem;
 }
 .grid-header nav a:first-child{
     color: #FFFFFF;
@@ -68,11 +70,40 @@
     color: #4D9C23;
 }
 
-
-
-
-/* #conf{
+/* section 1 conf*/
+#conf{
     width: 100vw;
     height: 50vh;
-    background: url(../imgs/ba1.jpg) center/cover;
-} */
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../imgs/ba1.jpg) center/cover;
+}
+.grid-conf > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50rem;
+    margin-right: 10rem;
+    color: #FFFFFF;
+}
+.grid-conf > div h1{
+    font-size: 3rem;
+}
+.grid-conf > div p{
+    text-align: right;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    line-height: 2.5rem;
+}
+.grid-conf a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    border: #FFFFFF solid 1px;
+}
+.grid-conf a:last-child{
+    background-color: #4D9C23;
+    border: #4D9C23 solid 1px;
+    margin-left: 1rem;
+}
