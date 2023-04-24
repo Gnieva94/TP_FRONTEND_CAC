@@ -2,4 +2,77 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
+/* Grid Templates */
+.grid-container{
+    display: grid;
+    grid-template: 6vh repeat(4,1fr) 6vh / repeat(2,1fr);
+    grid-template-areas: "grid-header grid-header"
+                         "grid-conf grid-conf"
+                         "grid-oradores grid-oradores"
+                         "grid-lugarFecha grid-lugarFecha"
+                         "grid-conviertete grid-conviertete"
+                         "grid-footer grid-footer";
+    height: 100vh;
+}
+.grid-header{
+    grid-area: grid-header;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #47515A;
+}
+.grid-nav{
+    grid-area: grid-nav;
+}
+.grid-conf{
+    grid-area: grid-conf;
+}
+.grid-oradores{
+    grid-area: grid-oradores;
+}
+.grid-lugarFecha{
+    grid-area: grid-lugarFecha;
+}
+.grid-conviertete{
+    grid-area: grid-conviertete;
+}
+.grid-footer{
+    grid-area: grid-footer;
+}
+
+/* Header */
+.grid-header img{
+    height: 50px;
+}
+.grid-header p{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+.grid-header div{
+    display:flex;
+    align-items: center;
+}
+.grid-header nav a{
+    text-decoration: none;
+    color: #B5B5B6;
+    font-size: 1.025rem;
+    margin: 0 0.7rem;
+}
+.grid-header nav a:first-child{
+    color: #FFFFFF;
+}
+
+.grid-header nav a:last-child{
+    color: #4D9C23;
+}
+
+
+
+
+/* #conf{
+    width: 100vw;
+    height: 50vh;
+    background: url(../imgs/ba1.jpg) center/cover;
+} */
