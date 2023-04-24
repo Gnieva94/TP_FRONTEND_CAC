@@ -1,0 +1,25 @@
+/* Header */
+.grid-header img{
+    height: 5rem;
+}
+.grid-header p{
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+.grid-header div{
+    display:flex;
+    align-items: center;
+}
+.grid-header nav a{
+    text-decoration: none;
+    color: #B5B5B6;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+.grid-header nav a:first-child{
+    color: #FFFFFF;
+}
+
+.grid-header nav a:last-child{
+    color: #4D9C23;
+}

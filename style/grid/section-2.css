@@ -1,0 +1,78 @@
+/* section 2 oradores */
+.grid-oradores > p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.grid-oradores h3{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+/* card */
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    max-height: 350rem;
+    margin: 0 1.5rem;
+    border: #e2dede solid 1px;
+    border-radius: 0.5rem;
+}
+.card-img{
+    height: 25rem;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+/* card img */
+.steve{
+    background: #000000 url(../../imgs/steve.jpg) center/cover;
+}
+.bill{
+    background: #000000 url(../../imgs/bill.jpg) center/cover;
+}
+.ada{
+    background: #000000 url(../../imgs/ada.jpeg) center/cover;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card-description h3{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+.card-description p{
+    line-height: 1.9rem;
+    font-size: 1rem;
+}
+/* description tags */
+.tags{
+    display: flex;
+    align-items: center;
+}
+.tags p{
+    border-radius: 0.3rem;
+    margin: 0 1rem 0 0;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+.javascript{
+    background-color: #F3B11A;
+    color: #000000;
+}
+.react{
+    background-color: #0FA2B3;
+    color: #FFFFFF;
+}
+.negocios{
+    background-color: #585152;
+    color: #FFFFFF;
+}
+.startups{
+    background-color: #FF071A;
+    color: #FFFFFF;
+}

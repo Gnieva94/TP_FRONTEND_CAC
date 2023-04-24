@@ -1,0 +1,30 @@
+/* section lugar y fecha */
+.lugar-img{
+    background: #000000 url(../../imgs/honolulu.jpg) center/cover;
+    height: 40rem;
+    width: 50%;
+}
+.fecha-description{
+    background-color: #1F222E;
+    color: #FFFFFF;
+    padding: 1rem;
+    width: 50%;
+}
+.fecha-description h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.fecha-description p{
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+.fecha-description a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    border: #FFFFFF solid 1px;
+    margin: 1.5rem 0;
+}

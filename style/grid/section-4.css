@@ -1,0 +1,54 @@
+/* section conviertete */
+.grid-conviertete p:first-child{
+    font-size: 1.2rem;
+}
+.grid-conviertete h3{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.grid-conviertete form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+}
+.grid-conviertete form input{
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    border: #B5B5B6 solid 1px;
+    font-size: 1.5rem;
+    width: 45rem;
+}
+.grid-conviertete form input:last-child{
+    display: inline;
+}
+.grid-conviertete form textarea{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: #B5B5B6 solid 1px;
+    font-size: 1.5rem;
+    width: 92.5rem;
+    height: 10rem;
+}
+.grid-conviertete form p{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color:  #79797c;
+}
+.grid-conviertete form button{
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    border: #72a339 solid 1px;
+    font-size: 2rem;
+    width: 92.5rem;
+    background-color: #93ce51;
+    color: #ffffff;
+}
+.orador-pform{
+    font-size: 1.5rem;
+}
