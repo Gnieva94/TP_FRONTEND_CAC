@@ -10,13 +10,13 @@ html{
 /* Grid Templates */
 .grid-container{
     display: grid;
-    grid-template: 6vh repeat(4,1fr) 6vh / repeat(2,1fr);
-    grid-template-areas: "grid-header grid-header"
-                         "grid-conf grid-conf"
-                         "grid-oradores grid-oradores"
-                         "grid-lugarFecha grid-lugarFecha"
-                         "grid-conviertete grid-conviertete"
-                         "grid-footer grid-footer";
+    grid-template: 6vh repeat(4,1fr) 6vh / 1fr;
+    grid-template-areas: "grid-header"
+                         "grid-conf"
+                         "grid-oradores"
+                         "grid-lugarFecha"
+                         "grid-conviertete"
+                         "grid-footer ";
     height: 100vh;
 }
 .grid-header{
@@ -41,12 +41,17 @@ html{
 }
 .grid-lugarFecha{
     grid-area: grid-lugarFecha;
+    display: flex;
 }
 .grid-conviertete{
     grid-area: grid-conviertete;
 }
 .grid-footer{
     grid-area: grid-footer;
+    background: linear-gradient(45deg,#243546,#276477 );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Header */
@@ -193,4 +198,43 @@ html{
 .startups{
     background-color: #FF071A;
     color: #FFFFFF;
+}
+/* section lugar y fecha */
+.lugar-img{
+    background: #000000 url(../imgs/honolulu.jpg) center/cover;
+    height: 40rem;
+    width: 49.5vw;
+}
+.fecha-description{
+    background-color: #1F222E;
+    color: #FFFFFF;
+    padding: 1rem;
+    width: 49.4vw;
+}
+.fecha-description h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.fecha-description p{
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+.fecha-description a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    border: #FFFFFF solid 1px;
+    margin: 1.5rem 0;
+}
+
+
+
+/* footer */
+.grid-footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.1rem;
 }
