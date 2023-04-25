@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     .grid-container{
-        grid-template: 35vh 1fr / 1fr;
+        grid-template: 35vh repeat(4,1fr) 35vh / 1fr;
         grid-template-areas:
         "grid-header"
         "grid-conf"
@@ -9,6 +9,7 @@
         "grid-conviertete"
         "grid-footer ";
     }
+    /* header */
     .grid-header{
         flex-direction: column;
         justify-content: normal;
@@ -24,7 +25,7 @@
         width: 100%;
         height: 100%;
     }
-    .grid-header nav ul{
+    .grid-header-ul{
         display: grid;
         grid-template: repeat(5,1fr)/1fr;
         grid-template-areas:"l1"
@@ -51,17 +52,19 @@
         
     }
     .borde-li{
-        width: 100%;
-        height: 100%;
         border: #3f474e solid 1px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
     .grid-header nav ul li a{
+        width: 100%;
         margin: 0;
         text-align: center;
     }
+
+    /* section 1 */
     .grid-conf{
         /* display:none; */
         padding: 10rem 0;
@@ -86,18 +89,87 @@
         padding: 2rem 1rem;
     }
 
-
-    .grid-oradores{
-        display:none;
+    /* section 2 */
+    .card-container{
+        flex-wrap: wrap;
     }
+    .card{
+        margin-bottom: .5rem;
+        max-width: 350px;
+    }
+    .card-description p{
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+    /* section 3 */
     .grid-lugarFecha{
-        display:none;
+        flex-direction: column;
     }
+    .lugar-img{
+        width: 100%;
+        height: 30rem;
+    }
+    .fecha-description{
+        width: 100%;
+        height: 30rem;
+        padding: 2rem;
+        
+    }
+    .fecha-description p{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .fecha-description a{
+        display: inline-block;
+    }
+
+    /* section 4 */
     .grid-conviertete{
-        display:none;
+        padding: 2rem 0;
     }
-    .grid-footer{
-        display:none;
+    .grid-conviertete form input{
+        width: 80%;
+    }
+    .grid-conviertete form textarea{
+        width: 80%;
+    }
+    .grid-conviertete form button{
+        width: 10rem;
+    }
+    .orador-pform{
+        text-align: center;
+    }
+    .inputNombreApellido{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* footer */
+    #grid-footer-ul{
+        display: grid;
+        grid-template: repeat(7,1fr)/1fr;
+        grid-template-areas:"l1"
+                            "l2"
+                            "l3"
+                            "l4"
+                            "l5"
+                            "l6"
+                            "l7";
+        height: 100%;
+        padding: 0;
+    }
+    .l6{
+        grid-area:l6;
+    }
+    .l7{
+        grid-area:l7;
+    }
+    #grid-footer-ul li a{
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 }
 
