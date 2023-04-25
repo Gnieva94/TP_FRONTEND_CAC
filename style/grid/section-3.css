@@ -1,4 +1,7 @@
 /* section lugar y fecha */
+.grid-lugarFecha{
+    display: flex;
+}
 .lugar-img{
     background: #000000 url(../../imgs/honolulu.jpg) center/cover;
     height: 40rem;

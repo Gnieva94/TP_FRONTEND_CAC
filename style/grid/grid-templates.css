@@ -9,43 +9,23 @@
                          "grid-conviertete"
                          "grid-footer ";
     height: 100vh;
+    width: 100%;
 }
 .grid-header{
     grid-area: grid-header;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: #47515A;
 }
 .grid-conf{
     grid-area: grid-conf;
-    display: flex;
-    justify-content: flex-end;
-    
 }
 .grid-oradores{
     grid-area: grid-oradores;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
 }
 .grid-lugarFecha{
     grid-area: grid-lugarFecha;
-    display: flex;
 }
 .grid-conviertete{
     grid-area: grid-conviertete;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
 }
 .grid-footer{
     grid-area: grid-footer;
-    background: linear-gradient(45deg,#243546,#276477 );
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }

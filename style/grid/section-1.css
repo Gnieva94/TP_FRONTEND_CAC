@@ -1,5 +1,7 @@
 /* section 1 conf*/
 .grid-conf{
+    display: flex;
+    justify-content: flex-end;
     padding: 20rem 0 20rem 0;
     background-color: #000000;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../imgs/ba1.jpg);

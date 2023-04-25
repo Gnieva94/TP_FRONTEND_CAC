@@ -1,4 +1,11 @@
 /* section 2 oradores */
+.grid-oradores{
+    grid-area: grid-oradores;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
 .grid-oradores > p{
     font-size: 1rem;
     font-weight: bold;

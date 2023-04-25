@@ -1,8 +1,14 @@
 /* Header */
+.grid-header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #47515A;
+}
 .grid-header img{
     height: 5rem;
 }
-.grid-header p{
+.grid-header label{
     font-size: 1.8rem;
     color: #FFFFFF;
 }
@@ -10,16 +16,20 @@
     display:flex;
     align-items: center;
 }
-.grid-header nav a{
+.grid-header nav ul{
+    display: flex;
+    list-style: none;
+}
+.grid-header nav ul li a{
     text-decoration: none;
     color: #B5B5B6;
     font-size: 1.5rem;
     margin: 0 1rem;
 }
-.grid-header nav a:first-child{
+.grid-header nav ul li:first-child a{
     color: #FFFFFF;
 }
 
-.grid-header nav a:last-child{
+.grid-header nav ul li:last-child a{
     color: #4D9C23;
 }
