@@ -35,4 +35,7 @@
 .grid-header nav ul li:last-child a{
     color: #4D9C23;
 }
+.grid-header nav ul li:last-child a:hover{
+    color: #67d32c;
+}
 
