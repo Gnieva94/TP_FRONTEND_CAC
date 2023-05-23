@@ -1,18 +1,27 @@
 @media only screen and (max-width: 600px) {
     .grid-container{
-        grid-template: 35vh repeat(4,1fr) 35vh / 1fr;
+        grid-template: 35vh repeat(5,1fr) 35vh / 1fr;
         grid-template-areas:
         "grid-header"
         "grid-conf"
         "grid-oradores"
         "grid-lugarFecha"
         "grid-conviertete"
+        "grid-tickets"
         "grid-footer ";
+    }
+    .grid-tickets{
+        display: none;
+    }
+    section[id]{
+        scroll-margin-top: 0vh;
     }
     /* header */
     .grid-header{
         flex-direction: column;
         justify-content: normal;
+        position: static;
+        height: 35vh;
     }
     .grid-header div {
         flex-direction: column;
