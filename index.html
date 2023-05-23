@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/grid/section-2.css">
     <link rel="stylesheet" href="style/grid/section-3.css">
     <link rel="stylesheet" href="style/grid/section-4.css">
+    <link rel="stylesheet" href="style/grid/section-5.css">
     <link rel="stylesheet" href="style/grid/footer.css">
     <link rel="stylesheet" href="style/responsive/media-query.css">
     <title>Conf Bs As</title>
@@ -30,7 +31,7 @@
                     <li class="l2 borde-li"><a href="#oradores">Los oradores</a></li>
                     <li class="l3 borde-li"><a href="#lugarFecha">El lugar y la fecha</a></li>
                     <li class="l4 borde-li"><a href="#conviertete">Conviértete en orador</a></li>
-                    <li class="l5 borde-li"><a href="#">Comprar tickets</a></li>
+                    <li class="l5 borde-li"><a href="#tickets">Comprar tickets</a></li>
                 </ul>
             </nav>
         </header>
@@ -114,6 +115,56 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        <section id="tickets" class="grid-tickets">
+            <div class="opcion-container">
+                <div class="texto-box box">
+                    <h3>Estudiante</h3>
+                    <p>Tienen un descuento</p>
+                    <p>80%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="texto-box box">
+                    <h3>Trainee</h3>
+                    <p>Tienen un descuento</p>
+                    <p>50%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="texto-box box">
+                    <h3>Junior</h3>
+                    <p>Tienen un descuento</p>
+                    <p>15%</p>
+                    <p>* presentar documentación</p>
+                </div>
+            </div>
+            <h6>VENTA</h6>
+            <h2>VALOR DE TICKET 200$</h2>
+            <form action="">
+                <div class="form-nombreApellido">
+                    <input required type="text" placeholder="Nombre" class="input-box input-box-50">
+                    <input required type="text" placeholder="Apellido" class="input-box input-box-50">
+                </div>
+                <input required type="email" placeholder="Correo" class="input-box">
+                <div class="form-cantidadCategoria">
+                    <div class="form-cantidad">
+                        <label for="">Cantidad</label>
+                        <input type="number" placeholder="Cantidad" class="input-box" min="1">
+                    </div>
+                    <div class="form-categoria">
+                        <label required for="Categoria">Categoria</label>
+                        <select required name="Categoria" id="Categoria" class="input-box">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div> 
+                </div>
+                <label class="form-pagar" for="">Total a Pagar: $</label>
+                <div class="form-botones">
+                    <button type="reset">Borrar</button>
+                    <button type="submit">Resumen</button>
+                </div> 
+            </form>
+        </section>
         <footer class="grid-footer">
             <ul id="grid-footer-ul">
                 <li class="l1 borde-li"><a href="#">Preguntas frecuentes</a></li>
@@ -126,6 +177,7 @@
             </ul>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
