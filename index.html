@@ -43,8 +43,8 @@
                     miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos
                     para ti. Te esperamos!</p>
                 <div>
-                    <a href="#oradores">Quiero ser orador</a>
-                    <a href="#">Comprar tickets</a>
+                    <a href="#conviertete">Quiero ser orador</a>
+                    <a href="#tickets">Comprar tickets</a>
                 </div>
             </div>
         </section>
@@ -107,10 +107,10 @@
             <p class="orador-pform">Anótate como orador para dar una <span style="text-decoration: underline; text-decoration-style: dotted;">charla ignite</span>.<br>Cuéntanos de qué quieres hablar!</p>
             <form action="">
                 <div class="inputNombreApellido">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
+                    <input required type="text" placeholder="Nombre">
+                    <input required type="text" placeholder="Apellido">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+                <textarea required name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
                 <p>Recuerda incluir un título para tu charla</p>
                 <button type="submit">Enviar</button>
             </form>
@@ -140,28 +140,28 @@
             <h2>VALOR DE TICKET 200$</h2>
             <form action="">
                 <div class="form-nombreApellido">
-                    <input required type="text" placeholder="Nombre" class="input-box input-box-50">
-                    <input required type="text" placeholder="Apellido" class="input-box input-box-50">
+                    <input type="text" placeholder="Nombre" class="input-box input-box-50">
+                    <input type="text" placeholder="Apellido" class="input-box input-box-50">
                 </div>
-                <input required type="email" placeholder="Correo" class="input-box">
+                <input type="email" placeholder="Correo" class="input-box">
                 <div class="form-cantidadCategoria">
                     <div class="form-cantidad">
                         <label for="">Cantidad</label>
-                        <input type="number" placeholder="Cantidad" class="input-box" min="1">
+                        <input type="number" placeholder="Cantidad" id="Cantidad" class="input-box" min="1">
                     </div>
                     <div class="form-categoria">
                         <label required for="Categoria">Categoria</label>
                         <select required name="Categoria" id="Categoria" class="input-box">
-                            <option value="Estudiante">Estudiante</option>
-                            <option value="Trainee">Trainee</option>
-                            <option value="Junior">Junior</option>
+                            <option >Estudiante</option>
+                            <option >Trainee</option>
+                            <option >Junior</option>
                         </select>
                     </div> 
                 </div>
-                <label class="form-pagar" for="">Total a Pagar: $</label>
+                <label id="form-pagar" class="form-pagar" for="">Total a Pagar: $</label>
                 <div class="form-botones">
                     <button type="reset">Borrar</button>
-                    <button type="submit">Resumen</button>
+                    <button id="Resumen" type="button">Resumen</button>
                 </div> 
             </form>
         </section>
