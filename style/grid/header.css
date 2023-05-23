@@ -4,6 +4,9 @@
     justify-content:space-around;
     align-items: center;
     background-color: #47515A;
+    position: fixed;
+    width: 100%;
+    height: 6vh;
 }
 .grid-header img{
     height: 5rem;
@@ -26,10 +29,10 @@
     font-size: 1.5rem;
     margin: 0 1rem;
 }
-.grid-header nav ul li:first-child a{
+.grid-header nav ul li a:hover{
     color: #FFFFFF;
 }
-
 .grid-header nav ul li:last-child a{
     color: #4D9C23;
 }
+
