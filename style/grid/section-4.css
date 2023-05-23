@@ -56,6 +56,9 @@
     background-color: #93ce51;
     color: #ffffff;
 }
+.grid-conviertete form button:hover{
+    background-color: #72a339;
+}
 .orador-pform{
     font-size: 1.5rem;
     text-align: center;

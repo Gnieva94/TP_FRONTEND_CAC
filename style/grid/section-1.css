@@ -36,8 +36,16 @@
     font-size: 1.5rem;
     border: #FFFFFF solid 1px;
 }
+.grid-conf a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
 .grid-conf a:last-child{
     background-color: #4D9C23;
     border: #4D9C23 solid 1px;
     margin-left: 1rem;
+}
+.grid-conf a:last-child:hover{
+    background-color: #67d32c;
+    color: #FFFFFF;
 }

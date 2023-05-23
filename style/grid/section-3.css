@@ -30,3 +30,7 @@
     font-size: 1.5rem;
     border: #FFFFFF solid 1px;
 }
+.fecha-description a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
