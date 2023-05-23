@@ -1,12 +1,13 @@
 /* Grid Templates */
 .grid-container{
     display: grid;
-    grid-template: 6vh repeat(4,1fr) 6vh / 1fr;
+    grid-template: 6vh repeat(5,1fr) 6vh / 1fr;
     grid-template-areas: "grid-header"
                          "grid-conf"
                          "grid-oradores"
                          "grid-lugarFecha"
                          "grid-conviertete"
+                         "grid-tickets"
                          "grid-footer ";
     height: 100vh;
     width: 100%;
@@ -25,6 +26,9 @@
 }
 .grid-conviertete{
     grid-area: grid-conviertete;
+}
+.grid-tickets{
+    grid-area: grid-tickets;
 }
 .grid-footer{
     grid-area: grid-footer;
